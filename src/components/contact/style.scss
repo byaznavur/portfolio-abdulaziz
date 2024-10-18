@@ -1,0 +1,18 @@
+.contact {
+  h1 {
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .contact-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .contact-info {
+      h3 {
+        margin: 6px 0;
+      }
+    }
+  }
+}

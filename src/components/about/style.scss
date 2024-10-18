@@ -1,0 +1,77 @@
+.about {
+  border-top: 2px solid black;
+  padding: 30px 0;
+  h1 {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -0.03em;
+    text-align: center;
+  }
+  .about-hirro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0;
+
+    .about-video {
+      width: 45%;
+
+      video {
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+
+    .about-info {
+      width: 45%;
+
+      h2 {
+        font-family: Poppins;
+        font-size: 41px;
+        font-weight: 600;
+        line-height: 56px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+      }
+
+      .social {
+        margin: 30px 0;
+        display: flex;
+        gap: 20px;
+
+        a {
+          border: 1px solid #000;
+          padding: 7px;
+          border-radius: 50%;
+          display: flex;
+          transition: all 0.7s ease;
+
+          &:hover {
+            background-color: #000;
+          }
+          svg {
+            width: 30px;
+            height: 30px;
+            color: #000;
+            transition: all 0.7s ease;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

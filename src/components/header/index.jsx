@@ -10,7 +10,7 @@ const Header = () => {
             <a href="#">AB</a>
           </h1>
         </div>
-        <button class = "burgerBtn">
+        <button className="burgerBtn">
           <GiHamburgerMenu />
         </button>
         <ul>

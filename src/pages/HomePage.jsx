@@ -12,12 +12,14 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      <Herro />
-      <Edu />
-      <Sikls />
-      <About />
-      <Projects />
-      <Contact />
+      <div className="container">
+        <Herro />
+        <Edu />
+        <Sikls />
+        <About />
+        <Projects />
+        <Contact />
+      </div>
       <Footer />
     </div>
   );

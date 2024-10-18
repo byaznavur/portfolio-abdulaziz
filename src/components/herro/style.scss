@@ -1,13 +1,14 @@
 .herro {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 20px;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   margin: 30px 0;
+  gap: 30px;
 
   &-info {
-    width: 50%;
+    width: 49%;
 
     h1 {
       font-family: Poppins;
@@ -56,14 +57,13 @@
   }
 
   &-img {
-    width: 50%;
+    width: 40%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
     animation: fadeInMove 2s ease-in-out; // Animatsiya qo'shildi
 
     img {
-      width: 75%;
+      width: 100%;
       margin: 0 auto;
       border-radius: 30px;
     }

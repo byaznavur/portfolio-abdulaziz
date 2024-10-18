@@ -1,0 +1,127 @@
+.herro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px 0;
+}
+.herro-info {
+  width: 50%;
+}
+.herro-info h1 {
+  font-family: Poppins;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+.herro-info h2 {
+  font-family: Poppins;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin: 5px 0;
+}
+.herro-info p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.herro-info a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 17.04px;
+  text-align: left;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  border: 1px solid black;
+}
+.herro-info a:hover {
+  color: #000;
+  background-color: #fff;
+}
+.herro-img {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: fadeInMove 2s ease-in-out;
+          animation: fadeInMove 2s ease-in-out;
+}
+.herro-img img {
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+@media (max-width: 768px) {
+  .herro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .herro-info, .herro-img {
+    width: 100%;
+  }
+  .herro-info {
+    text-align: center;
+  }
+  .herro-info h1,
+  .herro-info h2 {
+    font-size: 36px;
+  }
+  .herro-img img {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */

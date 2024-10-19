@@ -5,8 +5,7 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import Herro from "../components/herro";
 import Projects from "../components/projects";
-
-import Sikls from "../components/sikls";
+import Siklls from "../components/siklls";
 
 const HomePage = () => {
   return (
@@ -15,7 +14,7 @@ const HomePage = () => {
       <div className="container">
         <Herro />
         <Edu />
-        <Sikls />
+        <Siklls />
         <About />
         <Projects />
         <Contact />

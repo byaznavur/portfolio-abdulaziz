@@ -5,7 +5,7 @@ import mohir from "../../assets/image/mohir.png";
 import "./style.scss";
 const Edu = () => {
   return (
-    <div className=" education ">
+    <div id="education" className=" education ">
       <h1>My Education</h1>
       <div className="education-images ">
         <a className="education-link" href="https://tdtu.uz/">

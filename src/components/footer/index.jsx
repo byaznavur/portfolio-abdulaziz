@@ -1,5 +1,7 @@
+import "./style.scss";
+
 const Footer = () => {
-  return <div>Footer</div>;
+  return <footer>Made by Abdulaziz Programmer</footer>;
 };
 
 export default Footer;

@@ -15,24 +15,21 @@ const Header = () => {
         </button>
         <ul>
           <li>
-            <a href="#">About</a>
+            <a href="#abour">About</a>
           </li>
           <li>
-            <a href="#">My Edu</a>
-          </li>
-
-          <li>
-            <a href="#">Sikls</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
+            <a href="#education">My Edu</a>
           </li>
 
           <li>
-            <a href="#">Social </a>
+            <a href="#skils">Skills</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#project">Projects</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
           </li>
 
           <li>

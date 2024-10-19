@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./style.scss"; // Agar boshqa CSS kerak bo'lsa
 
-const Sikls = () => {
+const Siklls = () => {
   const settings = {
     dots: true, // Pastda navigatsion nuqtalar
     infinite: true, // Cheksiz aylanma
@@ -19,8 +19,8 @@ const Sikls = () => {
   };
 
   return (
-    <div className="sikls">
-      <h1>My Sikls</h1>
+    <div id="skils" className="siklls">
+      <h1>My Skills</h1>
       <div className="slider-container">
         <Slider {...settings}>
           <div>
@@ -53,4 +53,4 @@ const Sikls = () => {
   );
 };
 
-export default Sikls;
+export default Siklls;

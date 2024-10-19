@@ -2,7 +2,7 @@ import herroImg from "../../../src/assets/image/image.png";
 import "./style.scss";
 const Herro = () => {
   return (
-    <div>
+    <div id="herro">
       <div className="herro">
         <div className="herro-info">
           <h1>Hello, I'm Abdulaziz</h1>

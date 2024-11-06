@@ -38,3 +38,47 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .siklls {
+    border-top: 2px solid #000;
+    padding: 30px 0;
+    h1 {
+      font-family: Poppins;
+      font-size: 46px;
+      font-weight: 600;
+      line-height: 44px;
+      letter-spacing: -0.03em;
+      text-align: center;
+    }
+  }
+
+  .slider-container {
+    margin: 100px auto;
+
+    button {
+      color: #000;
+      background-color: #000;
+      border-radius: 50%;
+
+      &:hover {
+        background-color: #007bff;
+      }
+    }
+    .icon {
+      width: 100px;
+      height: 100px;
+      color: #000; /* Rangini istalgancha o'zgartirishingiz mumkin */
+      transition: transform 0.3s ease; /* Hover uchun silliq o'tish */
+      margin: 10px auto; /* Iconlar orasidagi bo'shliq */
+      display: flex; /* Ikonkani o'rtaga joylashtirish */
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        transform: scale(1.2); /* Hoverda kattalashish */
+        color: #007bff; /* Hoverda rangni o'zgartirish */
+      }
+    }
+  }
+}

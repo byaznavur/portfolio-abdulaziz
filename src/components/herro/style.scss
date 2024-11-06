@@ -68,40 +68,78 @@
       border-radius: 30px;
     }
   }
-
-  // Media query for responsive design
-  @media (max-width: 768px) {
-    flex-direction: column;
-    &-info,
-    &-img {
-      width: 100%;
-    }
-
-    &-info {
-      text-align: center;
-
-      h1,
-      h2 {
-        font-size: 36px;
-      }
-    }
-
-    &-img {
-      img {
-        width: 90%;
-      }
-    }
-  }
 }
 
-// Keyframes for animation
-@keyframes fadeInMove {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+@media screen and (max-width: 768px) {
+  .herro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    gap: 30px;
+
+    &-info {
+      width: 100%;
+
+      h1 {
+        font-family: Poppins;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 44.8px;
+        text-align: center;
+      }
+      h2 {
+        font-family: Poppins;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 44.8px;
+        text-align: center;
+        margin: 5px 0;
+      }
+
+      p {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      a {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 17.04px;
+        text-align: center;
+        background: #000;
+        width: 100%;
+        display: block;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: all 0.7s ease;
+        border: 1px solid black;
+        &:hover {
+          color: #000;
+          background-color: #fff;
+        }
+      }
+    }
+
+    &-img {
+      width: 100%;
+      display: flex;
+
+      animation: fadeInMove 2s ease-in-out; // Animatsiya qo'shildi
+
+      img {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 30px;
+      }
+    }
   }
 }

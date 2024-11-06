@@ -4,25 +4,49 @@ import { IoLogoJavascript } from "react-icons/io";
 import { SiMysql, SiNextdotjs, SiPython, SiTypescript } from "react-icons/si";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./style.scss"; // Agar boshqa CSS kerak bo'lsa
+import "./style.scss";
 
 const Siklls = () => {
-  const settings = {
-    dots: true, // Pastda navigatsion nuqtalar
-    infinite: true, // Cheksiz aylanma
-    speed: 500, // Tezlik (millisekund)
-    slidesToShow: 5, // Bir vaqtning o'zida necha slayd ko'rsatiladi
-    slidesToScroll: 1, // Bir marta scroll qilinganda nechta slayd siljiydi
-    autoplay: true, // Avtomatik aylanish
-    autoplaySpeed: 2000, // Avtomatik aylanish tezligi
-    pauseOnHover: true, // Hover qilinganda pauza
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024, // Large tablets and smaller desktops
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768, // Tablets
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 0,
+        },
+      },
+      {
+        breakpoint: 480, // Mobile phones
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <div id="skils" className="siklls">
       <h1>My Skills</h1>
       <div className="slider-container">
-        <Slider {...settings}>
+        <Slider className="slider" {...settings}>
           <div>
             <FaHtml5 className="icon" />
           </div>

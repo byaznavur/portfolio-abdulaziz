@@ -75,3 +75,87 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .about {
+    border-top: 2px solid black;
+    padding: 30px 0;
+    h1 {
+      font-family: Poppins;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 56px;
+      letter-spacing: -0.03em;
+      text-align: center;
+    }
+    .about-hirro {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 0;
+      gap: 20px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      .about-video {
+        width: 100%;
+
+        video {
+          width: 100%;
+          border-radius: 20px;
+        }
+      }
+
+      .about-info {
+        width: 100%;
+
+        h2 {
+          font-family: Poppins;
+          font-size: 41px;
+          font-weight: 600;
+          line-height: 56px;
+          letter-spacing: -0.03em;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-family: Poppins;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 30px;
+          text-align: center;
+        }
+
+        .social {
+          margin: 30px 0;
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          a {
+            border: 1px solid #000;
+            padding: 7px;
+            border-radius: 50%;
+            display: flex;
+            transition: all 0.7s ease;
+
+            &:hover {
+              background-color: #000;
+            }
+            svg {
+              width: 30px;
+              height: 30px;
+              color: #000;
+              transition: all 0.7s ease;
+
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 header {
-  background: #bbb9b9;
+  background: #000;
   padding: 0 20px;
 }
 
@@ -10,7 +10,7 @@ header {
   .logo {
     h1 {
       a {
-        color: #000;
+        color: #4db8ff;
         font-family: Poppins;
         font-size: 40px;
         font-weight: 600;
@@ -29,27 +29,22 @@ header {
     align-items: center;
     gap: 30px;
     li:last-child {
-      background-color: #000;
-      padding: 10px 25px;
-      border-radius: 10px;
-      transition: all 0.7s ease;
       a {
-        color: #fff;
-      }
-      &:hover {
+        color: #4db8ff;
+        transition: all 0.7s ease;
+        padding: 10px 25px;
+        border-radius: 10px;
         background-color: #fff;
 
-        a {
-          color: #000;
+        &:hover {
+          color: #4db8ff;
+          background-color: #000;
         }
-      }
-      &:active {
-        background-color: #333232;
       }
     }
     li {
       a {
-        color: #000;
+        color: #4db8ff;
         font-family: Poppins;
         font-size: 16px;
         font-weight: 600;
@@ -57,7 +52,7 @@ header {
         text-align: left;
 
         &:hover {
-          color: #333232;
+          color: #4db8ff;
         }
       }
     }
@@ -66,75 +61,43 @@ header {
 
 @media screen and (max-width: 768px) {
   header {
-    background: #bbb9b9;
-    padding: 0 20px;
+    background: #000;
+    padding: 0;
   }
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .logo {
-      h1 {
-        a {
-          color: #000;
-          font-family: Poppins;
-          font-size: 40px;
-          font-weight: 600;
-          line-height: 24px;
-          text-align: left;
-        }
-      }
-    }
+    position: relative;
+
     .burgerBtn {
       display: flex;
+      padding: 3px;
+      font-weight: bold;
+      font-size: 40px;
+      background: #000;
       border: none;
-      background-color: #bbb9b9;
       svg {
-        width: 30px;
-        height: 30px;
-        font-weight: bold;
+        color: #4db8ff;
       }
     }
-
     ul {
       display: none;
-      justify-content: space-between;
+    }
+    .list {
+      position: absolute;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
       align-items: center;
-      gap: 30px;
-      li:last-child {
-        background-color: #000;
-        padding: 10px 25px;
-        border-radius: 10px;
-        transition: all 0.7s ease;
-        a {
-          color: #fff;
-        }
-        &:hover {
-          background-color: #fff;
-
-          a {
-            color: #000;
-          }
-        }
-        &:active {
-          background-color: #333232;
-        }
-      }
-      li {
-        a {
-          color: #000;
-          font-family: Poppins;
-          font-size: 16px;
-          font-weight: 600;
-          line-height: 24px;
-          text-align: left;
-
-          &:hover {
-            color: #333232;
-          }
-        }
-      }
+      background-color: #000;
+      top: 67px;
+      margin: 0 auto;
+      left: 0;
+      padding: 20px 0;
     }
   }
 }

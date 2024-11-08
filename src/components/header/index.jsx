@@ -1,19 +1,26 @@
+import { useState } from "react";
 import "./style.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
+  const toggleBtn = () => {
+    setOpen(!open);
+  };
   return (
     <header>
       <div className="container header">
         <div className="logo">
           <h1 title="Bakhtiyarovich">
-            <a href="#">AB</a>
+            <a href="#">Ab </a>
           </h1>
         </div>
-        <button className="burgerBtn">
-          <GiHamburgerMenu />
+        <button onClick={toggleBtn} className="burgerBtn">
+          {open ? <IoClose /> : <GiHamburgerMenu />}
         </button>
-        <ul>
+        <ul className={`${open ? " " : "list"}`}>
           <li>
             <a href="#abour">About</a>
           </li>

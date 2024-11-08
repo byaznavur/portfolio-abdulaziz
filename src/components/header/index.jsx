@@ -18,9 +18,9 @@ const Header = () => {
           </h1>
         </div>
         <button onClick={toggleBtn} className="burgerBtn">
-          {open ? <GiHamburgerMenu /> : <IoClose />}
+          {open ? <IoClose /> : <GiHamburgerMenu />}
         </button>
-        <ul className={`${open ? " " : "list"}`}>
+        <ul className={`${open ? "list " : ""}`}>
           <li>
             <a href="#abour">About</a>
           </li>

@@ -22,7 +22,7 @@ const Header = () => {
         </button>
         <ul className={`${open ? "list " : ""}`}>
           <li>
-            <a href="#abour">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
             <a href="#education">My Edu</a>

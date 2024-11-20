@@ -12,13 +12,9 @@ const Contact = () => {
         <div className="contact-card">
           <IoPerson />
           <h4>Abdulaziz </h4>
-          <h3>Abduhakimov</h3>
         </div>
         <div className="contact-card">
           <GrContact />
-          <h4>
-            <a href="tel:+998996882812">Phone Number</a>
-          </h4>
           <h3>
             <a href="https://t.me/abdukhakimov">Telegram</a>
           </h3>
@@ -30,16 +26,12 @@ const Contact = () => {
               Location
             </a>
           </h4>
-          <h3>US Office</h3>
         </div>
         <div className="contact-card">
           <SiGmail />
           <h4>
             <a href="mailto:byabduhakimov@gmail.com">Gmail</a>
           </h4>
-          <h3>
-            <a href="https://github.com/byaznavur">GitHub</a>
-          </h3>
         </div>
       </div>
     </div>

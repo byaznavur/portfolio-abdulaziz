@@ -5,8 +5,10 @@ const Herro = () => {
     <div id="herro">
       <div className="herro">
         <div className="herro-info">
-          <h1>Hello, I'm Abdulaziz</h1>
-          <h2>I'm a Front-End Developer</h2>
+          <h1>Hi, I'm Abdulaziz</h1>
+          <h2>
+            I'm a <span>Front-End</span> Developer
+          </h2>
 
           <p>
             I love continuously learning new things and applying them in my work

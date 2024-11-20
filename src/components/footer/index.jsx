@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"; // ijtimoiy ik
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer container">
       <div className="footer__top">
         <div className="footer__brand">
           <h3>AB</h3>
@@ -11,9 +11,16 @@ const Footer = () => {
         </div>
         <div className="footer__links">
           <a href="#about">About</a>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#education">My Edu</a>
+          <a href="#skils">Skills</a>
+          <a href="#project">Projects</a>
           <a href="#contact">Contact</a>
         </div>
+      </div>
+
+      <div className="footer__bottom">
+        <h3>© 2024 Abdulaziz. All Rights Reserved</h3>
+
         <div className="footer__socials">
           <a
             href="https://www.linkedin.com"
@@ -37,10 +44,6 @@ const Footer = () => {
             <FaTwitter />
           </a>
         </div>
-      </div>
-
-      <div className="footer__bottom">
-        <h5>© 2024 Abdulaziz. All Rights Reserved</h5>
       </div>
     </footer>
   );

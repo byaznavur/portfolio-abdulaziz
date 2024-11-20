@@ -19,13 +19,13 @@
     border-radius: 50%;
 
     &:hover {
-      background-color: #007bff;
+      background-color: #4db8ff;
     }
   }
   .icon {
     width: 100px;
     height: 100px;
-    color: #000; /* Rangini istalgancha o'zgartirishingiz mumkin */
+    color: #4db8ff; /* Rangini istalgancha o'zgartirishingiz mumkin */
     transition: transform 0.3s ease; /* Hover uchun silliq o'tish */
     margin: 10px auto; /* Iconlar orasidagi bo'shliq */
     display: flex; /* Ikonkani o'rtaga joylashtirish */
@@ -62,7 +62,7 @@
       border-radius: 50%;
 
       &:hover {
-        background-color: #007bff;
+        background-color: #4db8ff;
       }
     }
     .icon {
@@ -77,7 +77,7 @@
 
       &:hover {
         transform: scale(1.2); /* Hoverda kattalashish */
-        color: #007bff; /* Hoverda rangni o'zgartirish */
+        color: #4db8ff; /* Hoverda rangni o'zgartirish */
       }
     }
   }

@@ -26,6 +26,10 @@
       letter-spacing: -0.03em;
       text-align: left;
       margin: 5px 0;
+
+      span {
+        color: #4db8ff;
+      }
     }
 
     p {
@@ -43,15 +47,15 @@
       font-weight: 600;
       line-height: 17.04px;
       text-align: left;
-      background: #000;
-      color: #fff;
+      background: #fff;
+      color: #4db8ff;
       padding: 10px 20px;
       border-radius: 10px;
       transition: all 0.7s ease;
-      border: 1px solid black;
+      border: 2px solid #4db8ff;
       &:hover {
-        color: #000;
-        background-color: #fff;
+        color: #4db8ff;
+        background-color: #000;
       }
     }
   }
@@ -114,17 +118,17 @@
         font-weight: 600;
         line-height: 17.04px;
         text-align: center;
-        background: #000;
         width: 100%;
         display: block;
-        color: #fff;
+        background: #fff;
+        color: #4db8ff;
         padding: 10px 20px;
         border-radius: 10px;
         transition: all 0.7s ease;
-        border: 1px solid black;
+        border: 1px solid #4db8ff;
         &:hover {
-          color: #000;
-          background-color: #fff;
+          color: #4db8ff;
+          background-color: #000;
         }
       }
     }
